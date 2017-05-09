@@ -92,7 +92,7 @@ MangoPaySDK = {
         }
 
         // Set the API endpoint
-        this.apiUrl = (this.isProduction() ? liveUrl : sandUrl) + '/' + clientId;
+        this.apiUrl = (this.isLive() ? liveUrl : sandUrl) + '/' + clientId;
 
         // Set credentials used for authentication
         this.credentials = clientId + ':' + secret;
@@ -124,18 +124,10 @@ MangoPaySDK = {
     },
 
     /**
-     * Checks if the SDK is pointing to the sandbox API
-     * @return {boolean}
-     */
-    isDevelopment: function () {
-        return this.production !== true;
-    },
-
-    /**
      * Checks if the SDK is pointing to the live API (production)
      * @return {boolean}
      */
-    isProduction: function () {
+    isLive: function () {
         return this.production === true;
     }
 };
