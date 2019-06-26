@@ -18,7 +18,7 @@ MangoPaySDK.cardRegistraton = {
         if (!(obj instanceof MangoPaySDK.cardRegistraton.CardRegistration)) {
             throw new Error('obj is not instance of CardRegistration');
         }
-        console.log("calling /cardregistrations with params:", obj);
+        //console.log("calling /cardregistrations with params:", obj);
         MangoPayClient.post('/cardregistrations', obj, callback);
     },
 

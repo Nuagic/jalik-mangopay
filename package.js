@@ -1,6 +1,6 @@
 Package.describe({
     name: 'nuagic:mangopay-cal',
-    version: '0.2.6',
+    version: '0.2.7',
     author: 'karl.stein.pro@gmail.com',
     summary: 'MangoPay REST SDK',
     homepage: 'https://github.com/jalik/jalik-mangopay',
